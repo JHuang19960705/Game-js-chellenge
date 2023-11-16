@@ -2,6 +2,10 @@ body {
   background: black;
   color: white;
   font-style: Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .title {
