@@ -62,7 +62,7 @@ function loseResult() {
   $(".js-start").css("display", "flex");
   $(".js-start-p").text(`再接再厲!`);
   $(".js-result-p").css("display", "block").text(`GAME OVER`);
-  $(".js-your-answer").css("display", "block").text(`你輸入 「${playerAns}」`);
+  $(".js-your-answer").css("display", "block").text(`你按的是 「${playerAns}」`);
   $(".js-correct-answer").css("display", "block").text(`答案是 「${numberAll}」`);
 }
 
