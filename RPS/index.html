@@ -13,15 +13,9 @@
    <p class="title">Rock Paper Scissors</p>
 
    <div>
-      <button onclick="
-         playGame('Rock');
-      " class="move-button"><img src="img/rock-emoji.png" alt="" class="move-icon"></button>
-      <button onclick="
-         playGame('Paper');
-      " class="move-button"><img src="img/paper-emoji.png" alt="" class="move-icon"></button>
-      <button onclick="
-         playGame('Scissors');
-      " class="move-button"><img src="img/scissors-emoji.png" alt="" class="move-icon"></button>
+      <button class="move-button js-move-button" data-play-move="Rock"><img src="img/rock-emoji.png" alt="" class="move-icon"></button>
+      <button class="move-button js-move-button" data-play-move="Paper"><img src="img/paper-emoji.png" alt="" class="move-icon"></button>
+      <button class="move-button js-move-button" data-play-move="Scissors"><img src="img/scissors-emoji.png" alt="" class="move-icon"></button>
    </div>
 
    <p class="js-result result">You win.</p>
@@ -43,6 +37,10 @@
     ">Auto Play</button>
    </div>
 
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
    <script src="js/RPS.js"></script>
 
 </body>
