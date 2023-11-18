@@ -1,12 +1,91 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.js-start{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.417);
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-result-p{
+  position: absolute;
+  top:10px;
+  font-size: 3rem;
+  background-color: #011F3F;
+  color: white;
+  display: none;
+  font-weight: 900;
+}
+
+.js-start-p{
+  font-size: 2.5rem;
+  width: 50%;
+  height: 25%;
+  background-color: white;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 5px 5px 1px 1px black;
+}
+
+.js-start-p:hover{
+  background-color: #011f3f;
+  color: white;
+  box-shadow: 5px 5px 1px 1px rgba(255, 255, 255, 0.273);
+  transform: translateY(-5px);
+  transition: .25s;
+}
+
+.js-start-p:active{
+  transform: translateY(5px);
+  transition: .25s;
+}
+
+/* .js-start-p:checked{
+  transform: translateY(5px);
+  transition: .25s;
+} */
+
+.js-your-answer{
+  position: absolute;
+  background-color: #ffffff85;
+  color: rgb(0, 89, 255);
+  border-bottom: 2px #011F3F solid;
+  bottom: 100px;
+  font-weight: 900;
+  display: none;
+}
+
+.js-correct-answer{
+  position: absolute;
+  background-color: #00000085;
+  color: rgb(255, 0, 0);
+  border-bottom: 2px #011F3F solid;
+  bottom: 60px;
+  font-weight: 900;
+  display: none;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
+  font-size: 2.5rem;
+  margin:  3%;
   color: #FEF2BF;
 }
 
@@ -14,14 +93,13 @@ body {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
